@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <title>Terrorist Attacks</title>
+    <script type="text/javascript">
+      function $(id)
+      {
+        return document.getElementById(id);
+      };
+      function changeOpacity()
+      {
+        var direction=-1;
+        var opacityValue=100;
+        function doChange()
+        {
+          if(++opacityValue>=100)
+          {
+            direction=-1;
+          }
+          if(--opacityValue<=0)
+          {
+            direction=1;
+          }
+          opacityValue+=direction;
+          $("topic").style.filter="alpha(opacity="+opacityValue+")";
+          $("topic").style.opacity=opacityValue/100;
+        };
+        setInterval(doChange,30);
+      };
+    </script>
+</head>
+<body onload="changeOpacity()">
+<div id="cover">
+    <div id="title">
+      <h1 id="topic">How Far is Terrorism from Us?</h1>
+    </div>
+</div>
+
+
+
+
+<div class="wrapper">
+  <div class="c1_r1">
+    <div class="wrapper">
+      <div class="cspan2_r1">
+        <h3-1>
+          <br><br><br>
+          A horrible incident: November 2015 Paris attacks
+        </h3-1>
+      </div>
+      <div class="c1_r2_top">
+        <img src="images/paris1.png"  alt="paris" />
+      </div>
+      <div class="c1_r3_top">
+        <img src="images/paris2.png"  alt="paris" />
+      </div>
+      <div class="c1_r4">
+        <h3-2>
+          <br><br><br>
+          OVERVIEW<br><br>
+        </h3-2>
+      </div>
+
+      <div class="c1_r5">
+        
+          <span class="h2">T</span><span class="p">errorism is a kind of violence created intendly to make a mess among people. In order to make some <br>contribution to address these vulnerabilities, there is a necessity to visualize and analyze data behind terrorism.<br><br><br>
+
+          </span><span class="p_bold">• Therefore, we want to explore the following questions: <br><br></span>
+          <span class="p">- What is the general overview of terrorist attacks over time? <br> 
+          - How about attack frequency in different regions? Do they still have the same trend as the world’s? <br>
+          - What is the main attack type terrorists would like to adopt? Why do they prefer it? <br>
+          - How weapon types and claiming affect the casualty? <br>
+          - Who do terrorists want to attack? <br>
+          - Which terrorist groups are the most famous? How many people do they harm? <br>
+          - Why do they want to attack terrorism? What are their motivations? <br>
+          - How terrorism affects economy and expected life span? <br><br><br><br><br>
+
+        </span>
+      </div>
+
+    </div>
+  </div>
+  <div class="c1_r2">
+    <div class="wrapper">
+      <div class="c1_r1">
+        <h3>
+          <br><br>
+          1. What is the general overview of terrorist attacks over time?
+        </h3>
+      </div>
+      <div class="c1_r2">
+        <h4>
+          1.1 Does terrorism attack frequency have significant features and distribuion in time series?
+        </h4>
+      </div>
+      <div class="c1_r3_top">
+        <iframe src="img_html/attack_year.html" frameborder="0" margin="0" scrolling="no" width=800 height=500></iframe>
+      </div>
+      
+      <div class="c1_r4_top">
+        <p>
+          • The frequency of terrorist attacks has shown an overall upward trend in recent years. <br>
+          - Especially, the number goes up dramatically since 2012. <br>
+          - The peak is reached in 2014 with a number of 16903. <br><br>
+
+          • Such trends may be related to the increasingly advanced technology of monitoring. <br>
+          - At the same time, whether the international standard of terrorist attacks has changed over the past decades has yet to be verified.  
+
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="c1_r3">
+    <div class="wrapper">
+      <div class="c12_r1">
+        <iframe src="img_html/attack_month.html" frameborder="0" margin="0" scrolling="no" width=600 height=400></iframe>
+      </div>
+      <div class="c34_r1">
+        <h5>
+          <br><br>
+          Attack Frequency Monthly
+        </h5>
+        <p>
+          <br><br>
+          • The number of attacks that occurred most in May and least in December. <br><br>
+          • We suspect that terrorist organization also have Christmas, which leads to lower frequency in the end of a year. <br><br>
+
+        </p>
+      </div>
+      <div class="c12_r2">
+          <h5>
+            <br><br>
+            Attack Frequency Weekly
+          </h5>
+          <p>
+            <br><br>
+            • The number of attacks that occurred most in May and least in December.<br>We suspect that terrorist organization also have Christmas, which leads to lower frequency in the end pf a year. <br><br> 
+            • However, there are not significant trend in right figure. In general, terrorist attacks do not seem to have a specific month preference.<br><br>
+          </p>
+      </div>
+      <div class="c34_r2">
+        <iframe src="img_html/attack_week.html" frameborder="0" margin="0" scrolling="no" width=600 height=400></iframe>
+      </div>
+      <div class="c12_r3">
+        <iframe src="img_html/attack_day.html" frameborder="0" margin="0" scrolling="no" width=600 height=400></iframe>
+      </div>
+      <div class="c34_r3">
+        <p>
+          <h5>
+            <br><br>
+            Attack Frequency Daily
+          </h5>        
+          <p>
+            <br><br>
+           • The number of attacks that occurred on the 31st of each month was about half less than on other days, which coincides with half of the big months of the year. <br><br>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="c1_r4">
+      <div class="wrapper">
+        <div class="c1_r1">
+          <h4>
+            <br><br>
+            1.2 How about attack frequency and deaths in the world?
+          </h4>
+        </div>
+        
+        <div class="c1_r2_top">
+          <iframe src="img_html/Terror_Timeline.html" frameborder="0" margin="0" scrolling="no" width=1000 height=610></iframe>
+        </div>
+        
+        <div class="c1_r3_top">
+          <p>
+            • The figure show the distribution of attack event on the world map for last 47 years. (1970-2017) <br>
+            - Terrorism remains unevenly spread throughout the world as time goes by. <br>
+            - In early years, most attack events were located in America and Western Europe. <br>
+            - As time goes up, terrorism increasingly transferred to Middle East and South Asia. <br>
+            - Recently, 94 % of all terrorist deaths are located in the Middle-East and North Africa, sub-Saharan Africa and South Asia. 
+
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  <div class="c1_r5">
+      <div class="wrapper">
+
+        <div class="c1_r1">
+          <iframe src="img_html/Casualty thermogram_timeline.html" frameborder="0" margin="0" scrolling="no" width=1000 height=610></iframe>
+        </div>
+        
+        <div class="c1_r2">
+          <p>
+            • The figure above shows the trend of deaths in attack events.<br><br>
+            - The deaths were relatively slight before 21st century. The deaths experienced a surge since 2005. <br>From 2006 to 2016, deaths from terrorism increased 67%.<br><br>  
+            - Each of the 5 countries mentioned above has a single terrorist group that is responsible for the majority of deaths. <br>Iraq is the wound of world. In 2016, Iraq experienced its worst year with a 40 per cent increase in deaths.<br><br> <br><br> 
+
+
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="c1_r6">
+      <div class="wrapper">
+        
+        <div class="c12_r1">
+          <iframe src="img_html/latitudes_attacks.html" frameborder="0" margin="0" scrolling="no" width=610 height=420></iframe>
+        </div>
+
+        <div class="c34_r1">
+          <iframe src="img_html/latitudes_death.html" frameborder="0" margin="0" scrolling="no" width=610 height=420></iframe>
+        </div>
+        
+        <div class="c1_r2">
+          <p>
+            <br><br> 
+            • The left one is for frequency distribution in latitude, the right one is for death distribution. <br><br>       
+            • On the left hand side, there is a significant strip across 30-40N. <br>The corresponding regions are the  Middle East and North Africa, where attack events happened more than 30 thousand times. <br><br>
+            • For sake of analysis competence, we also consider death distribution in different latitudes.<br> It is obvious that the regions lying at a latitude of 30 degrees North are most harmed, where Iraq is located. <br><br><br><br>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+   <div class="c1_r7">
+      <div class="wrapper">
+        <div class="c1_r1">
+          <h3>
+            2. How about attack frequency in different regions? </h3>
+            <h3>Do they still have the same trend as the world’s?<br><br>
+          </h3>
+        </div>
+        <div class="c1_r2">
+          <p>
+            • We have seen the distribution of attack frequency over the world. How about terrorism attack frequency in various continents? <br><br>• According to the geographic location and distribution of terrorism attacked, we combined 12 regions into 5 different continents. <br>Luckily, we find something interesting.<br><br>
+          </p>
+        </div>
+
+        <div class="c12_r3">
+          <iframe src="img_html/district_year.html" frameborder="0" margin="0" scrolling="no" width=600 height=400></iframe>
+        </div>
+
+        <div class="c34_r3">
+          <p>
+            • We can see from the graph that attack frequency increased explosively from 2009, except America.<br><br>
+            • Attack frequency peaked the highest point in 2015 in Europe. <br><br>
+            • Taking absolute quantity as consideration, terrorism frequency is always the lowest in Australia in the years from 1970 to 2017, while terrorism frequency happens the most frequently in Africa, and then in Asia.
+
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="c1_r8">
+      <div class="wrapper">
+        <div class="c14_r23">
+          <img src="images/diffrence.png" alt="difference" />
+        </div>
+        <div class="c1_r1">
+          <h4>
+            <br><br><br><br>
+            2.1 The situation is different from Europe in America. Why? <br>
+
+          </h4>
+        </div>
+
+        <div class="c1_r2">
+          <p>
+            <br>
+          </p>
+        </div>
+
+        <div class="c34_r3">
+          <p>
+            • Foreign Policy changed among these 47 years.<br>
+            - In the past, American government always interference in the <br>internal affairs and confront Islam. <br>- Europe took an active part like the past America recently, even<br> launching an air raid. <br>- Also, America take measures to prevent refugees. <br><br>
+            • Huge differences in geography<br>
+            - Europe is not secure as America in geography. <br>- Citizens in various countries in Europe can go any other countries<br> because of the visa policy.
+          </p>
+        </div>
+
+        <div class='c12_r4'>
+          <p>
+            • Terrorism always happened in May in Asia and America, while the attack frequency is high in July in both Europe and Africa. <br>Therefore, the result is the same as that in overview – Terrorism always attacked in May.<br><br>
+            • There are rarely terrorism attacking in Australia, which seems that Australia is a best continent to travel and much safer than other continents.
+          </p>
+        </div>
+
+        <div class="c34_r4">
+          <iframe src="img_html/district_month.html" frameborder="0" margin="0" scrolling="no" width=600 height=400></iframe>
+        </div>
+
+        <div class="c12_r5">
+          <iframe src="img_html/district_week.html" frameborder="0" margin="0" scrolling="no" width=600 height=400></iframe>
+        </div>
+
+      
+        <div class="c34_r5">
+          <p>
+            • Terrorism sincerely happened in Friday and Saturday in the continents of Africa and Asia, while in Europe and America. <br> There are some lower points in Saturday and Sunday.<br><br>
+
+            • It is because terrorists have a rest on weekend the same as normal people. <br>In most cases, rest days are on Friday and Saturday in Middle East of Asia and Africa, since there are more Muslim countries than that in other regions. <br>As we all know, the rest days in Muslim countries are on Friday and Saturday. <br>And Muslim often go on a pilgrimage on Friday. However, rests days on Western Europe and South America are on Saturday and Sunday due to few Muslim countries there.
+          </p>
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+
+    <div class="c1_r9">
+      <div class="wrapper">
+        <div class="c1_r1">
+          <h3>
+            <br><br>
+            3. Which terrorist groups are the most famous? <br>How many people do they harm?
+          </h3>
+        </div>
+
+        <div class="c1_r2">
+          <img src="images/group.png" width=1000 height=500 />
+        </div>
+
+        <div class="c1_r4">
+          <iframe src="http://localhost/echarts/globe.html" frameborder="0" margin="0" scrolling="no" width=1200 height=800></iframe>
+        </div>
+        <div class="c1_r3">
+          <p>
+            • In the world, the four deadliest terrorist groups were responsible for 59% of all deaths in 2017. <br><br>
+            - “Tailiban” and “ISIL” are most famous two groups. In 2016, around three quarters of deaths from <br>terrorism in Syria were committed by ISIL, which killed 1,504 people. <br><br>
+            - Over half of all ISIL’s terrorist activities targeted civilians and civilian deaths accounted for over <br>half of the deaths caused by the group.<br><br><br><br>
+            • The Earth Graph below shows the lines of attack by several famous groups.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="c1_r10">
+      <div class="wrapper">
+        <div class="c1_r1">
+          <h3>
+            4. Why do they want to attack terrorism? <br>What are their motivations?
+          </h3>
+        </div>
+
+        <div class="c1_r2">
+          <img src="images/motive.png" width=1000 height=500/>
+
+        </div>
+
+        <div class="c1_r3">
+          <p>
+            • Terrorist attacks, in the context of an ongoing armed conflict, can serve a range of purposes. <br><br>
+            - In 2016, attacks against government targets constituted 29% of all attacks that occurred in conflict countries. <br>
+            - “Victim” also accounts for a large part of motivation behind attacks. <br>
+            - A recently conducted analysis of 500 extremist organizations in Africa found that over 50% of respondents were <br>motivated to join an extremist organization as they perceived their religion as under attack.<br><br><br><br>
+
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="c1_r11">
+      <div class="wrapper">
+        <div class="c1_r1">
+          <h3>
+            5. What is the main attack type terrorists would like to adopt? <br>Why do they prefer it?
+          </h3>
+        </div>
+        <div class="c1_r2">
+          <iframe src="img_html/attack-type.html" frameborder="0" margin="0" scrolling="no" width=800 height=620></iframe>
+        </div>
+        <div class="c1_r3_top">
+          <p>
+            • Up to now, terrorists adopts 3 types of method most: assassination, armed assault and bombing/explosion. <br>And the types of attack become more and more various. <br>
+            • Meanwhile, Bombing/Explosion and Armed Assault are the attack types that occur the most, <br>with 88222 and 42663 cases respectively, which lead to over 50% incidents.<br><br><br><br>
+
+          </p>
+        </div>
+
+         <div class="c1_r4_top">
+          <iframe src="img_html/success_rate.html" frameborder="0" margin="0" scrolling="no" width=1000 height=550></iframe>
+
+        </div>
+
+        <div class="c1_r5">
+          <p><br>
+            • Numerous attacks have harmed people’s safety through these 47 years. <br>• The most successful attack types constituting a peril for human life. <br>• And property are barricade incidents (99.2%) and kidnapping (97.8%), both of which consist hostage taking. <br>• However, these attacks are not the most frequent ones.<br><br><br><br>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="c1_r12">
+      <div class="wrapper">
+        <div class="c1_r1">
+          <h3>
+            6. How weapon types and claiming affect the casualty? <br>Why do they prefer it?
+          </h3>
+        </div>
+
+        <div class="c1_r2_top">
+          <h4>
+             6.1 Cross section analysis
+          </h4>
+        </div>
+        <div class="c1_r3_top">
+          <iframe src="img_html/region-claim-kills-sankey.html" frameborder="0" margin="0" scrolling="no" width=800 height=500></iframe>
+        </div>
+        <div class="c1_r4_top">
+          <p>
+             • We establish conduction pathway ”weapon type-whether claim before attack or not”-global casualty-regional casualty”. <br>
+             • Most deaths resulted from bombings and explosions, including suicide bombings that targeted crowds. <br>
+             • Middle East, South Asia and Sub-Saharan Africa are top 3 seriously damaged regions.<br>• It is consistent with our finding in part X.<br><br>
+
+          </p>
+        </div>
+
+        <div class="c1_r5">
+          <h4>
+             6.2 Time series  analysis
+          </h4>
+        </div>
+
+         <div class="c1_r6">
+          <iframe src="img_html/weapon-nkills-time.html" frameborder="0" margin="0" scrolling="no" width=1050 height=600></iframe>
+
+        </div>
+
+        <div class="c1_r7_top">
+          <p>
+            • Weapons become diversified as time goes by. <br>
+            - In early years, terrorists usually adopt only 2 techniques--firearms and explosives. <br>
+            - But in 21st century, they have 8 common weapons to commit attack. <br>
+            - More recently, the use of vehicles as weapons has increased significantly following the <br>directive by an ISIL spokesman on 22 September 2014 to attack Westerners using cars.<br><br>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="c1_r13">
+      <div class="wrapper">
+        <div class="c1_r1">
+          <h3>
+            <br><br>
+            7. Who do terrorists want to attack?
+          </h3>
+        </div>
+
+        <div class="c1_r2">
+          <iframe src="img_html/target-type.html" frameborder="0" margin="0" scrolling="no" width=800 height=650></iframe>
+
+        </div>
+
+        <div class="c1_r3_top">
+          <p>
+            • Obviously, there is a upgoing trend of attack frequency for each target type from 1970 to 2017, <br>which is corresponding to our analysis before. <br>
+            • Among all the target types, private citizens & property, military and police are most harmed <br>targets in attack.<br><br>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="c1_r14">
+      <div class="wrapper">
+        <div class="c1_r1">
+          <h3>
+            <br><br>
+            8. How terrorism affects economy and expected life span?<br><br>
+          </h3>
+        </div>
+
+        <div class="c1_r2">
+          <iframe src="img_html/gdp-life.html" frameborder="0" margin="0" scrolling="no" width=800 height=450></iframe>
+
+        </div>
+
+        <div class="c1_r3">
+          <p>
+            • This graph shows the attack’s effect on each country, especially on life length and economy there. <br><br>
+            - The global economic impact of terrorism was US$84 billion in 2016. Especially in European countries, <br>terrorist attack may affect the local tourism industry. <br>
+            - For instance, tourism accounts for 14% of Spain's gross domestic product (GDP). <br>
+            - More frequent attack happens in certain country, shorter expected life length people there will have. <br>Terrorism throws a huge threat to a person's life. <br>
+
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="c1_r15">
+      <div class="wrapper">
+        <div class="c1_r1">
+          <p>
+            <br><br><br><br>
+          </p>
+        </div>
+        <div class="c1_r2">
+          <img src="images/bird.png"  alt="bird" />
+
+        </div>
+
+        <div class="c1_r3">
+          <h6>
+            
+            World is beautiful. <br><br>
+            Everyone has the right to live in peace. <br><br>
+            Say no to terrorism & maintain peace! <br><br>
+            Thank you! <br><br><br><br><br><br><br><br>
+
+          </h6>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+</body>
+</html>
